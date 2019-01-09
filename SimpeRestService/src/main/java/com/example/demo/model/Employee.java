@@ -1,11 +1,14 @@
 package com.example.demo.model;
 
+import java.math.BigDecimal;
+
 public class Employee {
 	private long id;
 	private String firstName;
 	private String lastName;
 	private String address;
-	private double salary;
+	private String company;
+	private BigDecimal salary;
 	
 	public long getId() {
 		return id;
@@ -31,13 +34,17 @@ public class Employee {
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public double getSalary() {
+	public String getCompany() {
+		return company;
+	}
+	public void setCompany(String company) {
+		this.company = company;
+	}
+	public BigDecimal getSalary() {
 		return salary;
 	}
-	public void setSalary(double salary) {
+	public void setSalary(BigDecimal salary) {
 		this.salary = salary;
 	}
 	
-	
-
 }
